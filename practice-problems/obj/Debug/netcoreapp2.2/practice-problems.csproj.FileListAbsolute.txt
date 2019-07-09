@@ -1,0 +1,11 @@
+D:\Github\practice-problems\bin\Debug\netcoreapp2.2\practice-problems.deps.json
+D:\Github\practice-problems\bin\Debug\netcoreapp2.2\practice-problems.runtimeconfig.json
+D:\Github\practice-problems\bin\Debug\netcoreapp2.2\practice-problems.runtimeconfig.dev.json
+d:\Github\practice-problems\bin\Debug\netcoreapp2.2\practice-problems.dll
+d:\Github\practice-problems\bin\Debug\netcoreapp2.2\practice-problems.pdb
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.csprojAssemblyReference.cache
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.csproj.CoreCompileInputs.cache
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.AssemblyInfoInputs.cache
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.AssemblyInfo.cs
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.dll
+d:\Github\practice-problems\obj\Debug\netcoreapp2.2\practice-problems.pdb
