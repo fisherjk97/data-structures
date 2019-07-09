@@ -13,9 +13,10 @@ namespace Tests
             string input = "dragon";
             string expected = "nogard";
             string reversed = input.Reverse();
-            
+            string reversedInPlace = input.ReverseInPlace();
             Assert.Equal(expected, reversed);
-           
+            Assert.Equal(expected, reversed);
+
             }
         }
         
