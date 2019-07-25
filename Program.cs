@@ -1,5 +1,6 @@
 ﻿using System;
 using  LinkedList;
+using Calculator;
 namespace DataStructures
 {
     class Program
@@ -47,6 +48,17 @@ namespace DataStructures
             myList2.Print();
             myList2.RemoveFirst();
             myList2.Print();
+
+
+            //Post Fix Calculator
+
+            string[] expression = new string[] {
+                "5", "6", "7", "*", "+", "1", "-" 
+            };
+
+            Console.WriteLine("Postfix calculator");
+            PostfixCalculator.Print(expression);
+            Console.WriteLine("Result: " + PostfixCalculator.Calculate(expression));
         }
     }
 }
