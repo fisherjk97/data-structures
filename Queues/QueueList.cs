@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 namespace Queue.List
 {
-        /*Examples from Pluralsight course "Algorithms and Data Structures - Part 1 by Robert Horvick */
-        
+        /*Examples from Pluralsight course "Algorithms and Data Structures - Part 1 by Robert Horvick*/
 
         /// <summary>
-        /// As First In First Out (FIFO) collection implemented as a linked list
+        /// A First In First Out (FIFO) collection implemented as a linked list
         /// </summary>
         /// <typeparam name="T"></typeparam>
         public class Queue<T> : IEnumerable<T>{

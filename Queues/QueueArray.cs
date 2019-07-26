@@ -11,7 +11,6 @@ namespace Queue.Array
         - closer in memory
         - data locality
         - fast enqueue/dequeue when no growing
-        
         Cons: 
         - difficult to setup
         */
