@@ -9,16 +9,16 @@ namespace Queue.Priority
         /// A collection that returns the highest priority item first and lowest priority item last
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public class PriorityQueue<Node> : IEnumerable<DataStructures.Node>{
+        public class PriorityQueue<T> : IEnumerable<T> where T: IComparable<T>{
 
             //allocate the list
-            private LinkedList<DataStructures.Node> _list = new LinkedList<DataStructures.Node>();
+            private LinkedList<T> _list = new LinkedList<T>();
         
             /// <summary>
             /// Add the item  to the queue in priority order
             /// </summary>
             /// <param name="item"></param>
-            public void Enqueue(DataStructures.Node item){
+            public void Enqueue(T item){
                 if(_list.Count == 0){
                     _list.AddLast(item);
 
@@ -28,7 +28,7 @@ namespace Queue.Priority
 
                     //while we're not at the end of the list and current value
                     //is larger than the value being inserted...
-                    while(current != null && CompareTo(current.Value, item) > 0){
+                    while(current != null && current.Value.CompareTo(item) > 0){
                         current = current.Next;
                     }
                     if(current == null){
@@ -46,13 +46,13 @@ namespace Queue.Priority
             /// Removes and returns the highest priority item from the queue
             /// </summary>
             /// <returns></returns>
-             public DataStructures.Node Dequeue(){
+             public T Dequeue(){
                 if(_list.Count == 0){
                     throw new InvalidOperationException("The queue is empty");
                 }
 
                 //store the laSt value in the temp variable
-                DataStructures.Node value = _list.First.Value;
+                T value = _list.First.Value;
 
                 //remove the last item
                 _list.RemoveFirst();
@@ -66,7 +66,7 @@ namespace Queue.Priority
             /// Returns the top item from the queue without removing it from the queue
             /// </summary>
             /// <returns></returns>
-             public DataStructures.Node Peek(){
+             public T Peek(){
                 if(_list.Count == 0){
                     throw new InvalidOperationException("The Stack is empty");
                 }
@@ -96,7 +96,7 @@ namespace Queue.Priority
             /// Returns an enumerator that enumerates the queue
             /// </summary>
             /// <returns></returns>
-            public IEnumerator<DataStructures.Node> GetEnumerator(){
+            public IEnumerator<T> GetEnumerator(){
                 return _list.GetEnumerator();
             }
 
